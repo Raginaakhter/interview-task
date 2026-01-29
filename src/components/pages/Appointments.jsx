@@ -1,10 +1,16 @@
-import React from 'react';
+
+import AppointmentCard from '../home/appointmenttable/AppointmentCard';
 import AppointmentTable from '../home/appointmenttable/Appointmenttable';
+import BookingLink from '../home/appointmenttable/BookingLink';
+
+
 
 const Appointments = () => {
     return (
-        <div>
-   <AppointmentTable></AppointmentTable>
+        <div className='w-full '>
+     <AppointmentCard></AppointmentCard>
+   <BookingLink></BookingLink>
+            <AppointmentTable></AppointmentTable>
         </div>
     );
 };

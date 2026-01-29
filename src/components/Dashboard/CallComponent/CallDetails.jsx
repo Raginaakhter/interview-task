@@ -3,7 +3,7 @@ import iconss from "../../../assets/icons/Icon (1).png"
 function CallDetails() {
 
   return (
-    <div className="bg-[#0d1929] rounded-xl h-full">
+    <div className="bg-[#111C3E] rounded-xl p-6">
       <h2 className="text-white text-xl font-semibold mb-6">Call Details</h2>
 
 

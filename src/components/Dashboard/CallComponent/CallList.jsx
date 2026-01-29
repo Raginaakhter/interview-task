@@ -10,7 +10,7 @@ function CallList() {
       duration: '6:23',
       status: 'Quote Provided',
       tag: 'Screen',
-      tagColor: 'bg-blue-500',
+      tagColor: 'bg-[#0E3D41]',
       statusBadge: 'AI Resolved',
       badgeColor: 'bg-[#0E3D41]'
     },
@@ -21,7 +21,7 @@ function CallList() {
       duration: '5:23',
       status: 'Escalated to technician',
       tag: 'Software',
-      tagColor: 'bg-blue-500',
+      tagColor: 'bg-[#0E3D41]',
       statusBadge: 'Warm Transfer',
       badgeColor: 'bg-[#05DF72]'
     },
@@ -32,7 +32,7 @@ function CallList() {
       duration: '5:23',
       status: 'Appointment Booked',
       tag: 'Battery',
-      tagColor: 'bg-blue-500',
+      tagColor: 'bg-[#0E3D41]',
       statusBadge: 'Appointment',
       badgeColor: 'bg-purple-500'
     },
@@ -43,7 +43,7 @@ function CallList() {
       duration: '0:20',
       status: 'Call Dropped',
       tag: 'Unknown',
-      tagColor: 'bg-gray-500',
+      tagColor: 'bg-[#0E3D41]',
       statusBadge: 'Dropped',
       badgeColor: 'bg-red-500'
     },
@@ -54,7 +54,7 @@ function CallList() {
       duration: '5:23',
       status: 'Quote Provided',
       tag: 'Screen',
-      tagColor: 'bg-blue-500',
+      tagColor: 'bg-[#0E3D41]',
       statusBadge: 'AI Resolved',
       badgeColor: 'bg-emerald-500'
     }
@@ -62,7 +62,7 @@ function CallList() {
 
   return (
 
-    <div className="bg-[#0d1929] rounded-xl  h-full">
+    <div className="p-6 bg-[#111C3E] rounded-xl  ">
       <h2 className="text-white text-xl font-semibold mb-4">Call List</h2>
       <div className="space-y-3">
         {calls.map((call) => (

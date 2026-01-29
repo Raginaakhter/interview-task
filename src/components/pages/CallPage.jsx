@@ -7,7 +7,7 @@ import CallDetails from '../Dashboard/CallComponent/CallDetails';
 
 function CallLogsPage() {
   return (
-    <div className="min-h-screen bg-[#0a1526] p-4 md:p-6">
+    <div className="min-h-screen bg-[#172556] p-4 md:p-6">
       <div className="max-w-7xl mx-auto">
         
       

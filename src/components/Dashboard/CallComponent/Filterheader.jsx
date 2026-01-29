@@ -25,7 +25,7 @@ function FilterHeader() {
 
 
 
-    <div className="bg-[#0d1929] rounded-xl p-4 mb-6">
+    <div className=" rounded-xl p-4 mb-6">
       <div className="flex flex-col md:flex-row gap-4 items-center">
 
 

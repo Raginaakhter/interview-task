@@ -22,6 +22,7 @@ function Sidebar({ currentRoute, onNavigate, menuOpen }) {
     top-0 left-0
     w-64 h-screen
     z-40
+    flex flex-col justify-between
     transition-transform duration-300
     bg-[#0d1f37]
     ${menuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
@@ -39,7 +40,7 @@ function Sidebar({ currentRoute, onNavigate, menuOpen }) {
 
 
       {/* Menu */}
-      <nav className="flex-1 p-3">
+      <nav className="flex-1 p-3 flex flex-col gap-2">
         {links.map((link) => (
 
 
@@ -79,8 +80,8 @@ function Sidebar({ currentRoute, onNavigate, menuOpen }) {
 
       {/* Logout */}
       <div className="p-3 pb-10 border-t border-cyan-500/10 bg-transparent">
-        <button className="relative w-full flex items-center gap-3 px-4 py-3 rounded-lg">
-          <LogOut className="text-[#000000]" size={34} />
+        <button className="relative w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+          <LogOut className="text-[#761c1c]" size={34} />
           <span className="text-lg font-medium text-red-400 hover:text-red-300">
             Log Out
           </span>
