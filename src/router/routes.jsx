@@ -4,6 +4,7 @@ import CallPage from "../components/pages/CallPage";
 import Appointments from "../components/pages/Appointments";
 import Settings from "../components/pages/Settingspage";
 import Home from "../components/pages/Home";
+import EditProfile from "../components/Dashboard/Settings/EditProfile";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/calls",
         element: <CallPage/>
+      },
+        {
+        path: "/edit-profile",
+        element: <EditProfile/>
       },
       {
         path: "appointments",
