@@ -7,17 +7,17 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex bg-[#172556] ">
       
       {/* Sidebar */}
       <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       {/* Main Content */}
-      <div className="flex-1">
+      <div className="flex-1 ">
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-        {/* 🔥 Child routes render here */}
-        <div className="p-4">
+        {/*  Child routes render here */}
+        <div className="">
           <Outlet />
         </div>
       </div>

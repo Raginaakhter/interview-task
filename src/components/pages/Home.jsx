@@ -1,9 +1,11 @@
-import React from 'react';
+import { DashboardCard } from "../home/DashboardCard";
+import DashboardChart from "../home/DashboardChart";
 
 const Home = () => {
     return (
-        <div>
-            this is home page
+        <div className="">
+           <DashboardCard></DashboardCard>
+           <DashboardChart></DashboardChart>
         </div>
     );
 };

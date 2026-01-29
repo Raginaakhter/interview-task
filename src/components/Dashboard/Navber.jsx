@@ -16,7 +16,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
 
   return (
 
-    <header className="h-20 bg-[#111B3C]  px-6 flex items-center justify-between">
+    <header className="h-20 sticky top-0 z-50 bg-[#111B3C]  px-6 flex items-center justify-between">
 
       <div className="flex items-center gap-4">
         <button onClick={() => setMenuOpen(!menuOpen)}

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import HomeIcon from "../assets/icons/homeIcon.png";
 import { LogOut } from "lucide-react";
-import logo from "../assets/icons/Container.png";
+import logo from "../assets/icons/logo.png";
 import PhoneIcon from "../assets/icons/PhoneIcon.png";
 import CalendarIcon from "../assets/icons/CalendarIcon.png";
 import SettingsIcon from "../assets/icons/SettingsIcon.png";
@@ -16,10 +16,17 @@ function Sidebar({ currentRoute, onNavigate, menuOpen }) {
   ];
 
   return (
-    <aside
-      className={`fixed lg:static top-0 left-0 z-40 h-screen w-56 bg-[#0d1f37] border-r border-cyan-500/20 transition-transform duration-300 flex flex-col
-      ${menuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
-    >
+   <aside
+  className={`
+    fixed lg:sticky
+    top-0 left-0
+    w-64 h-screen
+    z-40
+    transition-transform duration-300
+    bg-[#0d1f37]
+    ${menuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+  `}
+>
 
 
       {/* Logo */}
@@ -71,7 +78,7 @@ function Sidebar({ currentRoute, onNavigate, menuOpen }) {
       </nav>
 
       {/* Logout */}
-      <div className="p-3 pb-6 border-t border-cyan-500/10">
+      <div className="p-3 pb-10 border-t border-cyan-500/10 bg-transparent">
         <button className="relative w-full flex items-center gap-3 px-4 py-3 rounded-lg">
           <LogOut className="text-[#000000]" size={34} />
           <span className="text-lg font-medium text-red-400 hover:text-red-300">
